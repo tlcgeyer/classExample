@@ -1,5 +1,4 @@
 //Making use of class
-
 class Person {
     static count = 0 //we only want the variable to be dependent on the class
     constructor() {
@@ -50,3 +49,19 @@ class Person {
 export {
     Person
 }
+
+
+
+function pushToArr(...args) {
+    var arr = [];
+    for (var i = 0; i <= args.length; i++) {
+        setTimeout(() => {
+            console.log(i)
+            arr.push(i)
+        }, 1000)
+        return arr
+    }
+}
+
+// expected output = 1, 2, 3, 4 ...
+
